@@ -38,8 +38,7 @@ function updateFilters() {
 
     // 4c. Save the id of the filter that was changed as a variable.
     let filterID = changedElement.attr("id");
-    console.log(filterID)
-
+    console.log(filterID);
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
     if (elementValue) {
@@ -64,7 +63,7 @@ function filterTable() {
 }
   
   // 2. Attach an event to listen for changes to each filter
-d3.selectAll("input").on("change", updateFilters);
+  //d3.selectALL("input").on("change", updateFilters);
   
   // Build the table when the page loads
 buildTable(tableData);

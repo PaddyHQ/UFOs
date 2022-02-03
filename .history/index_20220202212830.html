@@ -42,9 +42,23 @@
                 <p>Filter Search</p>
               </form>
           </div>
-        <div class="col-md-9">
-            <table class="table table-striped">
-            <thead>
+          <div class="col-md-9">
+
+          </div>
+        </div>
+      </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <label for="date">Enter Date</label>
+            <input type="text" placeholder="1/10/2010" id="datetime" />
+        </li>
+        <li class="list-group-item">
+            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>        
+        </li>
+    </ul>
+    <div class="col-md-9">
+        <table class="table table-striped">
+          <thead>
             <tr>
             <th>
                 <th>Date</th>
@@ -56,18 +70,9 @@
                 <th>Comments</th>
             </th>
             </tr>
-            </thead>
-            <tbody></tbody>
-            </table>
-        </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-            <label for="date">Enter Date</label>
-            <input type="text" placeholder="1/10/2010" id="datetime" />
-        </li>
-        <li class="list-group-item">
-            <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>        
-        </li>
-    </ul> 
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
 </body>
 </html>

@@ -57,9 +57,8 @@ function updateFilters() {
     // 8. Set the filtered data to the tableData.
     let filteredData = tableData
     // 9. Loop through all of the filters and keep any data that matches the filter values
-    for (filters[filterID] in filters){
-      if(elementValue)
-        filteredData = filteredData.filter(row=> row.value === elementValue);
+    for (filterID in filters){
+      filteredData = filteredData.filter(row=> row.values === elementValue)
     }
   
     // 10. Finally, rebuild the table using the filtered data
